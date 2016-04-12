@@ -1,0 +1,132 @@
+### LISREL Input
+Analysis of round 2 BEDUT trustin (gp1)
+Data ni=7 no=653 ma=cm ng=2
+km
+*
+1						
+0.5719	1					
+0.6212	0.553	1				
+0.5895	0.496	0.8002	1			
+0.7163	0.5606	0.6926	0.6152	1		
+0.5086	0.7995	0.5785	0.5177	0.6746	1	
+0.6664	0.5374	0.7724	0.7054	0.7944	0.635	1
+
+me
+*
+4.790628
+5.049358
+4.55094
+4.606362
+4.926205
+5.155456
+4.587444
+
+sd
+*
+2.115911
+2.257515
+2.03098
+2.042367
+1.91658
+2.090695
+1.946183
+
+label
+prlmt1 legal1 polit1 part  prlmt2 legal2 polit2 
+
+select
+1 2 3 5 6 7/
+
+model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,fi ph=sy,fi ty=fr ka=fr al=fi
+
+fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+fr al 2 al 3 !al 4 al 5
+
+val 1 ly 1 1 ly 2 2 ly 3 3 
+fr ly 4 1 ly 5 2 ly 6 3
+
+val 1  ly 1 4 ly 4 5
+free ly 6 5
+val 1 ly 2 4 !ly 3 4
+fr ly 3 4 
+val 1 ly 5 5 !ly 6 5
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+
+fr ga 2 1 ga 3 1
+val 1 ga 1 1
+
+free ph 1 1 
+
+
+start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+pd
+out ad=off 
+
+
+
+Analysis of round 2 BEFRE trustin (gp2)
+Data  ni=7 no=476 ma=cm 
+km
+*
+1						
+0.5752	1					
+0.6526	0.5311	1				
+0.6045	0.5228	0.8058	1			
+0.7078	0.5639	0.6704	0.6351	1		
+0.5014	0.8056	0.5355	0.5448	0.6492	1	
+0.69		0.5667	0.8054	0.7725	0.808		0.637	1
+
+me
+*
+4.533875
+4.536424
+3.822045
+3.855615
+4.625514
+4.50101
+3.880808
+
+sd
+2.289037
+2.497678
+2.309829
+2.325116
+2.204888
+2.428637
+2.280869
+
+
+label
+prlmt1 legal1 polit1 part  prlmt2 legal2 polit2 
+
+select
+1 2 3 5 6 7/
+
+model ny=6 ne=5 nk=1 te=sy,fi ps=di,fi ly=in ga=fu,in ph=sy,fi ty=fi ka=fr al=in
+
+fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+
+val 1 ly 1 1 ly 2 2 ly 3 3 
+!fr ly 4 1 ly 5 2 ly 6 3
+
+
+val 1 ly 4 5 
+val 1 ly 2 4 
+val 1  ly 1 4 
+val 1 ly 5 5 ly 6 5
+val 1 ly 3 4
+
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+free ph 1 1 
+start .1 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+pd
+out ad=off 
+
