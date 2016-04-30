@@ -1,0 +1,605 @@
+
+                                DATE:  4/30/2016
+                                  TIME: 13:52
+
+
+                                L I S R E L  8.72
+
+                                       BY
+
+                         Karl G. Jöreskog & Dag Sörbom
+
+
+
+                    This program is published exclusively by
+                    Scientific Software International, Inc.
+                       7383 N. Lincoln Avenue, Suite 100
+                        Lincolnwood, IL 60712, U.S.A. 
+            Phone: (800)247-6113, (847)675-0720, Fax: (847)675-2140
+        Copyright by Scientific Software International, Inc., 1981-2005 
+          Use of this program is subject to the terms specified in the
+                        Universal Copyright Convention.
+                          Website: www.ssicentral.com
+
+ The following lines were read from file C:~\EE-satis.LS8:
+
+ Analysis of round 2 EEES satis (gp1)
+ Data ni=6 no=431 ma=cm ng=2
+ km
+ *
+ 1.0000
+ 0.6623   1.0000
+ 0.5455   0.6629   1.0000
+ 0.7283   0.5976   0.5368   1.0000
+ 0.5661   0.8229   0.5882   0.6211   1.0000
+ 0.5463   0.6343   0.8025   0.6122   0.6663   1.0000
+  
+ me
+ *
+ 4.733983
+ 4.087732
+ 4.803464
+ 4.706967
+ 3.90535
+ 4.717105
+  
+ sd
+ *
+ 2.084685
+ 2.101325
+ 2.147132
+ 1.857941
+ 1.975962
+ 1.941171
+  
+ model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,fi ph=sy,fi ty=fr ka=fr al=fi
+  
+ fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+  
+ fr al 2 al 3
+  
+ val 1 ly 1 1 ly 2 2 ly 3 3
+ fr ly 4 1 ly 5 2 ly 6 3
+  
+ val 1 ly 4 5 ly 1 4
+ val 1 ly 2 4
+  
+ val 1 ly 3 4
+ val 1 ly 5 5 ly 6 5
+  
+  
+ fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+ fr ps 1 1 ps 2 2 ps 3 3
+ fr ps 4 4
+ fr ps 5 5
+  
+ fr ga 2 1 ga 3 1
+ val 1 ga 1 1
+  
+ free ph 1 1
+  
+ start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+ pd
+ out  ad=off
+
+ Analysis of round 2 EEES satis (gp1)                                           
+
+                           Number of Input Variables  6
+                           Number of Y - Variables    6
+                           Number of X - Variables    0
+                           Number of ETA - Variables  5
+                           Number of KSI - Variables  1
+                           Number of Observations   431
+                           Number of Groups           2
+  
+ Analysis of round 2 EERU satis (gp2)
+ Data  ni=6 no=137 ma=cm
+ km
+ *
+ 1.0000
+ 0.6421   1.0000
+ 0.6469   0.7347   1.0000
+ 0.8092   0.6867   0.6388   1.0000
+ 0.5618   0.8445   0.7088   0.6917   1.0000
+ 0.6087   0.7321   0.8682   0.7027   0.7596   1.0000
+  
+ me
+ *
+ 4.220126
+ 3.638158
+ 3.81448
+ 4.345029
+ 3.839506
+ 4.134615
+  
+ sd
+ *
+ 2.216196
+ 2.322984
+ 2.482952
+ 2.120826
+ 2.152317
+ 2.328191
+  
+ model ny=6 ne=5 nk=1 te=sy,fi ps=sy,fi ly=in ga=fu,in ph=sy,fi ty=sp ka=fr al=in
+  
+ fi ty 1 ty 2 ty 3 ty 6 ty 4 !ty 5
+ free ty 5
+  
+ val 1 ly 1 1
+ val 1 ly 2 2
+ val 1 ly 3 3
+ 
+ val 1 ly 4 5
+ !val 1 ly 2 4
+ free ly 3 4
+ free ly 2 4
+ !val 1 ly 3 4
+ val 1  ly 1 4
+ val 1 ly 5 5
+ val 1 ly 6 5
+  
+ fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+ fr ps 1 1 ps 2 2 ps 3 3
+ fr ps 4 4
+ fr ps 5 5
+  
+  
+ free ph 1 1
+ start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+  
+ pd
+ out  ad=off
+
+ Analysis of round 2 EERU satis (gp2)                                           
+
+                           Number of Input Variables  6
+                           Number of Y - Variables    6
+                           Number of X - Variables    0
+                           Number of ETA - Variables  5
+                           Number of KSI - Variables  1
+                           Number of Observations   137
+                           Number of Groups           2
+
+ Analysis of round 2 EEES satis (gp1)                                           
+
+         Covariance Matrix       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1       4.35
+    VAR 2       2.90       4.42
+    VAR 3       2.44       2.99       4.61
+    VAR 4       2.82       2.33       2.14       3.45
+    VAR 5       2.33       3.42       2.50       2.28       3.90
+    VAR 6       2.21       2.59       3.34       2.21       2.56       3.77
+
+         Means   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                4.73       4.09       4.80       4.71       3.91       4.72
+
+ Analysis of round 2 EERU satis (gp2)                                           
+
+         Covariance Matrix       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1       4.91
+    VAR 2       3.31       5.40
+    VAR 3       3.56       4.24       6.17
+    VAR 4       3.80       3.38       3.36       4.50
+    VAR 5       2.68       4.22       3.79       3.16       4.63
+    VAR 6       3.14       3.96       5.02       3.47       3.81       5.42
+
+         Means   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                4.22       3.64       3.81       4.35       3.84       4.13
+
+
+ Analysis of round 2 EEES satis (gp1)                                           
+
+ Parameter Specifications
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+    VAR 1          0          0          0          0          0
+    VAR 2          0          0          0          0          0
+    VAR 3          0          0          0          0          0
+    VAR 4          1          0          0          0          0
+    VAR 5          0          2          0          0          0
+    VAR 6          0          0          3          0          0
+
+ GAMMA EQUALS GAMMA IN THE FOLLOWING GROUP
+
+         PHI         
+
+               KSI 1
+            --------
+                   6
+
+         PSI         
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+                   7          8          9         10         11
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6
+            --------   --------   --------   --------   --------   --------
+                  12         13         14         15         16         17
+
+ ALPHA EQUALS ALPHA IN THE FOLLOWING GROUP
+
+         KAPPA       
+
+               KSI 1
+            --------
+                  20
+
+
+ Analysis of round 2 EERU satis (gp2)                                           
+
+ Parameter Specifications
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+    VAR 1          0          0          0          0          0
+    VAR 2          0          0          0         21          0
+    VAR 3          0          0          0         22          0
+    VAR 4          1          0          0          0          0
+    VAR 5          0          2          0          0          0
+    VAR 6          0          0          3          0          0
+
+         GAMMA       
+
+               KSI 1
+            --------
+    ETA 1          0
+    ETA 2          4
+    ETA 3          5
+    ETA 4          0
+    ETA 5          0
+
+         PHI         
+
+               KSI 1
+            --------
+                  23
+
+         PSI         
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+                  24         25         26         27         28
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6
+            --------   --------   --------   --------   --------   --------
+                  29         30         31         32         33         34
+
+         TAU-Y       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6
+            --------   --------   --------   --------   --------   --------
+                   0          0          0          0         35          0
+
+         ALPHA       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+                   0         18         19          0          0
+
+         KAPPA       
+
+               KSI 1
+            --------
+                  36
+ 
+
+
+ Analysis of round 2 EEES satis (gp1)                                           
+
+ Number of Iterations = 34
+
+ LISREL Estimates (Maximum Likelihood)                           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.00        - -        - -       1.00        - -
+ 
+    VAR 2        - -       1.00        - -       1.00        - -
+ 
+    VAR 3        - -        - -       1.00       1.00        - -
+ 
+    VAR 4       1.00        - -        - -        - -       1.00
+              (0.01)
+               77.77
+ 
+    VAR 5        - -       0.96        - -        - -       1.00
+                         (0.01)
+                          73.85
+ 
+    VAR 6        - -        - -       1.00        - -       1.00
+                                    (0.01)
+                                     84.87
+ 
+
+ GAMMA EQUALS GAMMA IN THE FOLLOWING GROUP
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       2.76
+    ETA 2       2.30       3.50
+    ETA 3       2.21       2.64       3.48
+    ETA 4        - -        - -        - -       0.41
+    ETA 5        - -        - -        - -        - -       0.04
+    KSI 1       1.93       2.30       2.21        - -        - -       1.93
+
+         Mean Vector of Eta-Variables
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                4.72       4.10       4.69        - -        - -
+
+         PHI         
+
+               KSI 1   
+            --------
+                1.93
+              (0.20)
+                9.40
+ 
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.83       0.75       0.95       0.41       0.04
+              (0.12)     (0.13)     (0.13)     (0.09)     (0.08)
+                6.95       5.86       7.08       4.45       0.52
+ 
+
+         Squared Multiple Correlations for Structural Equations  
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.70       0.78       0.73        - -        - -
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                1.08       0.39       0.96       0.65       0.60       0.33
+              (0.12)     (0.09)     (0.11)     (0.10)     (0.08)     (0.09)
+                8.87       4.55       8.71       6.41       7.34       3.81
+ 
+
+         Squared Multiple Correlations for Y - Variables         
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.75       0.91       0.80       0.81       0.84       0.91
+
+ ALPHA EQUALS ALPHA IN THE FOLLOWING GROUP
+
+         KAPPA       
+
+               KSI 1   
+            --------
+                4.72
+              (0.09)
+               50.09
+ 
+
+
+                         Group Goodness of Fit Statistics
+
+                        Contribution to Chi-Square = 11.80
+                  Percentage Contribution to Chi-Square = 39.53
+ 
+                      Root Mean Square Residual (RMR) = 0.10
+                             Standardized RMR = 0.024
+                        Goodness of Fit Index (GFI) = 0.99
+
+
+ Analysis of round 2 EERU satis (gp2)                                           
+
+ Number of Iterations = 34
+
+ LISREL Estimates (Maximum Likelihood)                           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.00        - -        - -       1.00        - -
+ 
+    VAR 2        - -       1.00        - -       0.44        - -
+                                               (0.35)
+                                                 1.25
+ 
+    VAR 3        - -        - -       1.00       0.79        - -
+                                               (0.58)
+                                                 1.35
+ 
+    VAR 4       1.00        - -        - -        - -       1.00
+              (0.01)
+               77.77
+ 
+    VAR 5        - -       0.96        - -        - -       1.00
+                         (0.01)
+                          73.85
+ 
+    VAR 6        - -        - -       1.00        - -       1.00
+                                    (0.01)
+                                     84.87
+ 
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       1.00
+ 
+    ETA 2       1.19
+              (0.06)
+               20.14
+ 
+    ETA 3       1.15
+              (0.06)
+               19.79
+ 
+    ETA 4        - -
+ 
+    ETA 5        - -
+ 
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       4.03
+    ETA 2       3.34       4.54
+    ETA 3       3.22       3.84       4.75
+    ETA 4        - -        - -        - -       0.56
+    ETA 5        - -        - -        - -        - -       0.12
+    KSI 1       2.80       3.34       3.22        - -        - -       2.80
+
+         Mean Vector of Eta-Variables
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                4.28       3.57       4.18        - -        - -
+
+         PHI         
+
+               KSI 1   
+            --------
+                2.80
+              (0.44)
+                6.44
+ 
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                1.23       0.55       1.06       0.56       0.12
+              (0.24)     (0.22)     (0.25)     (0.44)     (0.16)
+                5.10       2.47       4.27       1.27       0.76
+ 
+
+         Squared Multiple Correlations for Structural Equations  
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.70       0.88       0.78        - -        - -
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.76       0.75       0.87       0.36       0.58       0.33
+              (0.41)     (0.18)     (0.28)     (0.16)     (0.15)     (0.15)
+                1.85       4.28       3.14       2.24       3.96       2.14
+ 
+
+         Squared Multiple Correlations for Y - Variables         
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.86       0.86       0.85       0.92       0.88       0.94
+
+         TAU-Y       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                 - -        - -        - -        - -       0.36        - -
+                                                          (0.10)
+                                                            3.64
+ 
+
+         ALPHA       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                 - -      -1.53      -0.72        - -        - -
+                         (0.28)     (0.27)
+                          -5.47      -2.65
+ 
+
+         KAPPA       
+
+               KSI 1   
+            --------
+                4.28
+              (0.16)
+               26.02
+ 
+
+
+                        Global Goodness of Fit Statistics
+
+                             Degrees of Freedom = 18
+               Minimum Fit Function Chi-Square = 29.86 (P = 0.039)
+       Normal Theory Weighted Least Squares Chi-Square = 28.63 (P = 0.053)
+                 Estimated Non-centrality Parameter (NCP) = 10.63
+              90 Percent Confidence Interval for NCP = (0.0 ; 29.29)
+ 
+                        Minimum Fit Function Value = 0.053
+                Population Discrepancy Function Value (F0) = 0.019
+              90 Percent Confidence Interval for F0 = (0.0 ; 0.052)
+             Root Mean Square Error of Approximation (RMSEA) = 0.046
+             90 Percent Confidence Interval for RMSEA = (0.0 ; 0.076)
+               P-Value for Test of Close Fit (RMSEA < 0.05) = 0.55
+ 
+                  Expected Cross-Validation Index (ECVI) = 0.18
+             90 Percent Confidence Interval for ECVI = (0.14 ; 0.19)
+                         ECVI for Saturated Model = 0.074
+                       ECVI for Independence Model = 110.72
+ 
+     Chi-Square for Independence Model with 30 Degrees of Freedom = 62657.14
+                           Independence AIC = 62681.14
+                                Model AIC = 100.63
+                              Saturated AIC = 84.00
+                           Independence CAIC = 62745.25
+                               Model CAIC = 292.95
+                             Saturated CAIC = 308.37
+ 
+                          Normed Fit Index (NFI) = 1.00
+                        Non-Normed Fit Index (NNFI) = 1.00
+                     Parsimony Normed Fit Index (PNFI) = 0.60
+                        Comparative Fit Index (CFI) = 1.00
+                        Incremental Fit Index (IFI) = 1.00
+                         Relative Fit Index (RFI) = 1.00
+ 
+                             Critical N (CN) = 660.82
+ 
+
+
+                         Group Goodness of Fit Statistics
+
+                        Contribution to Chi-Square = 18.06
+                  Percentage Contribution to Chi-Square = 60.47
+ 
+                      Root Mean Square Residual (RMR) = 0.22
+                             Standardized RMR = 0.042
+                        Goodness of Fit Index (GFI) = 0.99
+
+                           Time used:    0.031 Seconds
