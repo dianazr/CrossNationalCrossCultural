@@ -1,0 +1,116 @@
+Analysis of round 2 UARU satis group 1 (gp3)
+Data ni=6 no=260 ma=km ng=2
+Km
+*
+1.0000
+0.6084   1.0000
+0.5005   0.6847   1.0000
+0.7398   0.5314   0.4273   1.0000
+0.5650   0.7630   0.6592   0.6950   1.0000
+0.3794   0.6114   0.7814   0.4501   0.6549   1.0000
+
+me
+*
+2.79941
+3.240654
+3.237624
+3.139726
+3.579104
+3.607038
+
+sd
+*
+2.009103
+2.552015
+2.591216
+1.997164
+2.238513
+2.235636
+
+
+model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,fi ph=sy,fi ty=fr ka=fr al=fi
+
+fi ty 1 ty 2  ty 4 ty 5 ty 3 ty 6 
+fr al 2 al 3 
+
+
+val 1 ly 1 1 ly 3 3 ly 2 2
+fr ly 4 1 ly 5 2 ly 6 3
+
+val 1 ly 3 4 
+val 1 ly 4 5 
+val 1 ly 2 4 
+!val 1 ly 1 4
+fr ly 1 4 
+val 1 ly 5 5 
+val 1 ly 6 5
+
+
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+
+!non-significant
+!fr ps 5 5 
+fr ga 2 1 ga 3 1
+val 1 ga 1 1
+
+free ph 1 1 
+start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+pd
+out ad=off 
+
+Analysis of round 2 UAUA satis (gp4)
+Data ni=6 no=217 ma=km 
+Km
+*
+1.0000
+0.3670   1.0000
+0.3613   0.6171   1.0000
+0.7284   0.3429   0.2115   1.0000
+0.2896   0.7428   0.5206   0.3995   1.0000
+0.2814   0.4750   0.7719   0.3009   0.5682   1.0000
+
+mean
+*
+
+3.196167
+4.785436
+4.955752
+3.813115
+4.888889
+5.067616
+
+sd
+*
+2.08452
+2.618941
+2.623519
+1.968792
+2.316313
+2.352594
+
+model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,in ph=sy,fi ty=sp ka=fr al=in
+
+fi ty 1 ty 2  ty 5 ty 6 ty 4 ty 3
+fr al 1
+val 1 ly 1 1 ly 2 2 ly 3 3 
+fr ly 4 1 ly 5 2 ly 6 3
+
+val 1 ly 4 5 ly 1 4
+val 1 ly 2 4 ly 3 4 
+val 1 ly 5 5 ly 6 5
+
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+!non-significant
+!fr ps 5 5 
+
+fr ga 1 1 
+
+free ph 1 1 
+start .1 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+
+pd
+out ad=off
