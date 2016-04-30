@@ -1,0 +1,118 @@
+Analysis of round 2 EEES satis (gp1)
+Data ni=6 no=431 ma=cm ng=2
+km
+*
+1.0000
+0.6623   1.0000
+0.5455   0.6629   1.0000
+0.7283   0.5976   0.5368   1.0000
+0.5661   0.8229   0.5882   0.6211   1.0000
+0.5463   0.6343   0.8025   0.6122   0.6663   1.0000
+
+me
+*
+4.733983
+4.087732
+4.803464
+4.706967
+3.90535
+4.717105
+
+sd
+*
+2.084685
+2.101325
+2.147132
+1.857941
+1.975962
+1.941171
+
+model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,fi ph=sy,fi ty=fr ka=fr al=fi
+
+fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+
+fr al 2 al 3
+
+val 1 ly 1 1 ly 2 2 ly 3 3 
+fr ly 4 1 ly 5 2 ly 6 3
+
+val 1 ly 4 5 ly 1 4
+val 1 ly 2 4
+
+val 1 ly 3 4 
+val 1 ly 5 5 ly 6 5
+
+
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+fr ga 2 1 ga 3 1
+val 1 ga 1 1
+
+free ph 1 1 
+
+start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+pd
+out  ad=off 
+
+Analysis of round 2 EERU satis (gp2)
+Data  ni=6 no=137 ma=cm
+km
+*
+1.0000
+0.6421   1.0000
+0.6469   0.7347   1.0000
+0.8092   0.6867   0.6388   1.0000
+0.5618   0.8445   0.7088   0.6917   1.0000
+0.6087   0.7321   0.8682   0.7027   0.7596   1.0000
+
+me
+*
+4.220126
+3.638158
+3.81448
+4.345029
+3.839506
+4.134615
+
+sd
+*
+2.216196
+2.322984
+2.482952
+2.120826
+2.152317
+2.328191
+
+model ny=6 ne=5 nk=1 te=sy,fi ps=sy,fi ly=in ga=fu,in ph=sy,fi ty=sp ka=fr al=in 
+
+fi ty 1 ty 2 ty 3 ty 6 ty 4 !ty 5
+free ty 5
+
+val 1 ly 1 1 
+val 1 ly 2 2
+val 1 ly 3 3 
+
+val 1 ly 4 5 
+!val 1 ly 2 4 
+free ly 3 4
+free ly 2 4
+!val 1 ly 3 4
+val 1  ly 1 4 
+val 1 ly 5 5 
+val 1 ly 6 5
+
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+
+free ph 1 1 
+start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+
+pd
+out  ad=off
+
