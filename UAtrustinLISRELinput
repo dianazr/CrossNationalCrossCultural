@@ -1,0 +1,132 @@
+Analysis of round 2 UARU trustin group 1 (gp3)
+Data ni=7 no=705 ma=cm NG=2
+Km
+*
+1						
+0.5583	1					
+0.6172	0.5101	1				
+0.5691	0.477	0.7725	1			
+0.8266	0.5002	0.5844	0.5571	1		
+0.5071	0.8282	0.4664	0.4783	0.5652	1	
+0.5597	0.4622	0.7515	0.6571	0.6274	0.5705	1
+
+
+me
+*
+3.672228
+3.143001
+2.976401
+2.983822
+3.499291
+3.141844
+2.933333
+
+sd
+*
+2.726665
+2.72083
+2.475358
+2.311243
+2.645281
+2.66922
+2.440737
+
+label
+prlmt1 legal1 polit1 part  prlmt2 legal2 polit2 
+
+select
+1 2 3 5 6 7/
+
+model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,fi ph=sy,fi ty=fr ka=fr al=fi
+
+fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+
+fr al 2 al 3 
+
+val 1 ly 1 1 ly 2 2 ly 3 3 
+fr ly 4 1 ly 5 2 ly 6 3
+
+val 1 ly 3 4 
+!val 1 ly 4 5 
+fr ly 4 5
+val 1 ly 2 4 
+val 1 ly 1 4
+val 1 ly 5 5 
+val 1 ly 6 5
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+fr ga 2 1 ga 3 1
+val 1 ga 1 1
+
+free ph 1 1 
+
+
+start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+pd
+out ad=off 
+
+
+
+Analysis of round 2 UAUA trustin (gp4)
+Data ni=7 no=635 ma=cm 
+Km
+*
+1						
+0.6604	1					
+0.6478	0.5794	1				
+0.6009	0.5448	0.7931	1			
+0.8726	0.608	0.6245	0.5572	1		
+0.6146	0.8555	0.5589	0.5335	0.6852	1	
+0.6234	0.57	0.8235	0.7082	0.6998	0.6555	1
+
+mean
+*
+5.144605
+4.165094
+3.987209
+3.836516
+4.84252
+4.127559
+3.959055
+
+sd
+*
+2.692727
+2.817739
+2.331856
+2.313692
+2.52753
+2.666733
+2.249057
+
+
+label
+prlmt1 legal1 polit1 part  prlmt2 legal2 polit2 
+
+select
+1 2 3 5 6 7/
+
+model ny=6 ne=5 nk=1 ly=in te=sy,fi ps=di,fi  ga=fu,in ph=sy,fi ty=sp ka=fr al=in
+
+fi ty 1 ty 2 ty 3 ty 5 ty 6 ty 4
+
+
+val 1 ly 2 2 ly 3 3 
+fr ly 4 1 
+
+val 1 ly 1 4 ly 4 5
+val 1 ly 2 4 ly 3 4 
+val 1 ly 5 5 ly 6 5
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+free ph 1 1 
+start .1 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+
+pd
+out  ad=off
