@@ -1,0 +1,1294 @@
+
+                                DATE:  5/18/2016
+                                  TIME: 17:43
+
+
+                                L I S R E L  8.72
+
+                                       BY
+
+                         Karl G. Jöreskog & Dag Sörbom
+
+
+
+                    This program is published exclusively by
+                    Scientific Software International, Inc.
+                       7383 N. Lincoln Avenue, Suite 100
+                        Lincolnwood, IL 60712, U.S.A. 
+                    Copyright by Scientific Software International, Inc., 1981-2005 
+          Use of this program is subject to the terms specified in the
+                        Universal Copyright Convention.
+                          Website: www.ssicentral.com
+
+ The following lines were read from file C:\~Chsatis.LS8:
+
+ Analysis of round 2 CHGER satis (gp1)
+ Data ni=6 no=490 ma=cm ng=2
+ km
+ *
+ 1
+ 0.6521 1
+ 0.4303 0.4597 1
+ 0.7108 0.543 0.5472 1
+ 0.5581 0.7401 0.5247 0.6517 1
+ 0.4512 0.4038 0.773 0.5925 0.5441 1
+  
+ me
+ *
+ 5.29765
+ 5.261905
+ 6.412239
+ 5.543186
+ 5.532819
+ 6.429134
+  
+ sd
+ *
+ 1.918365
+ 1.85908
+ 1.954099
+ 1.816208
+ 1.776127
+ 1.73515
+  
+ model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,fi ph=sy,fi ty=fr ka=fr al=fi
+  
+ fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+ fr al 2 al 3 !al 4 al 5
+  
+ val 1 ly 1 1 ly 2 2 ly 3 3
+ fr ly 4 1 ly 5 2 ly 6 3
+  
+ val 1 ly 1 4
+ val 1 ly 4 5
+ val 1 ly 2 4
+ !fr ly 1 4
+ fr ly 3 4
+ !val 1 ly 3 4
+ val 1 ly 5 5 !ly 6 5
+ fr ly 6 5
+ fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+ fr ps 1 1 ps 2 2 ps 3 3
+ fr ps 4 4
+ fr ps 5 5
+  
+  
+ fr ga 2 1 ga 3 1
+ val 1 ga 1 1
+  
+ free ph 1 1
+  
+  
+ start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+ pd
+ out mi sc ad=off
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+                           Number of Input Variables  6
+                           Number of Y - Variables    6
+                           Number of X - Variables    0
+                           Number of ETA - Variables  5
+                           Number of KSI - Variables  1
+                           Number of Observations   490
+                           Number of Groups           2
+  
+ Analysis of round 2 CHFRE satis (gp2)
+ Data  ni=6 no=156 ma=cm
+ km
+ *
+ 1
+ 0.4725 1
+ 0.4215 0.5977 1
+ 0.7016 0.4471 0.4098 1
+ 0.3988 0.7052 0.5194 0.5175 1
+ 0.3475 0.4547 0.7208 0.4177 0.5513 1
+  
+ me
+ *
+ 5.135983
+ 5.076596
+ 6.214876
+ 5.467836
+ 5.27381
+ 6.255814
+  
+ sd
+ *
+ 1.952347
+ 2.021865
+ 2.136953
+ 1.977183
+ 1.953662
+ 1.968679
+  
+ model ny=6 ne=5 nk=1 te=sy,fi ps=di,fi  ly=in ga=fu,in ph=sy,fi ty=sp ka=fr al=in
+  
+ fi ty 2 ty 3 ty 4 ty 5 ty 6 ty 1
+  
+ val 1 ly 1 1 ly 2 2 ly 3 3
+ !fr ly 4 1 ly 5 2 ly 6 3
+  
+ val 1 ly 4 5
+ val 1 ly 2 4
+ !val 1 ly 3 4
+ fr ly 3 4
+ val 1 ly 1 4
+ val 1 ly 5 5 ly 6 5
+  
+ fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+ fr ps 1 1 ps 2 2 ps 3 3
+ fr ps 4 4 ps 5 5
+  
+ free ph 1 1
+ start .1 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+ pd
+ out mi ad=off  sc
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+                           Number of Input Variables  6
+                           Number of Y - Variables    6
+                           Number of X - Variables    0
+                           Number of ETA - Variables  5
+                           Number of KSI - Variables  1
+                           Number of Observations   156
+                           Number of Groups           2
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+         Covariance Matrix       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1       3.68
+    VAR 2       2.33       3.46
+    VAR 3       1.61       1.67       3.82
+    VAR 4       2.48       1.83       1.94       3.30
+    VAR 5       1.90       2.44       1.82       2.10       3.15
+    VAR 6       1.50       1.30       2.62       1.87       1.68       3.01
+
+         Means   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                5.30       5.26       6.41       5.54       5.53       6.43
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+         Covariance Matrix       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1       3.81
+    VAR 2       1.87       4.09
+    VAR 3       1.76       2.58       4.57
+    VAR 4       2.71       1.79       1.73       3.91
+    VAR 5       1.52       2.79       2.17       2.00       3.82
+    VAR 6       1.34       1.81       3.03       1.63       2.12       3.88
+
+         Means   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                5.14       5.08       6.21       5.47       5.27       6.26
+
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+ Parameter Specifications
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+    VAR 1          0          0          0          0          0
+    VAR 2          0          0          0          0          0
+    VAR 3          0          0          0          1          0
+    VAR 4          2          0          0          0          0
+    VAR 5          0          3          0          0          0
+    VAR 6          0          0          4          0          5
+
+ GAMMA EQUALS GAMMA IN THE FOLLOWING GROUP
+
+         PHI         
+
+               KSI 1
+            --------
+                   8
+
+         PSI         
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+                   9         10         11         12         13
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6
+            --------   --------   --------   --------   --------   --------
+                  14         15         16         17         18         19
+
+ ALPHA EQUALS ALPHA IN THE FOLLOWING GROUP
+
+         KAPPA       
+
+               KSI 1
+            --------
+                  22
+
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+ Parameter Specifications
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+    VAR 1          0          0          0          0          0
+    VAR 2          0          0          0          0          0
+    VAR 3          0          0          0         23          0
+    VAR 4          2          0          0          0          0
+    VAR 5          0          3          0          0          0
+    VAR 6          0          0          4          0          5
+
+         GAMMA       
+
+               KSI 1
+            --------
+    ETA 1          0
+    ETA 2          6
+    ETA 3          7
+    ETA 4          0
+    ETA 5          0
+
+         PHI         
+
+               KSI 1
+            --------
+                  24
+
+         PSI         
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+                  25         26         27         28         29
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6
+            --------   --------   --------   --------   --------   --------
+                  30         31         32         33         34         35
+
+         ALPHA       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5
+            --------   --------   --------   --------   --------
+                   0         20         21          0          0
+
+         KAPPA       
+
+               KSI 1
+            --------
+                  36
+ 
+
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+ Number of Iterations = 70
+
+ LISREL Estimates (Maximum Likelihood)                           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.00        - -        - -       1.00        - -
+ 
+    VAR 2        - -       1.00        - -       1.00        - -
+ 
+    VAR 3        - -        - -       1.00       0.08        - -
+                                               (0.12)
+                                                 0.70
+ 
+    VAR 4       1.05        - -        - -        - -       1.00
+              (0.01)
+               95.15
+ 
+    VAR 5        - -       1.05        - -        - -       1.00
+                         (0.01)
+                         101.88
+ 
+    VAR 6        - -        - -       1.00        - -       1.21
+                                    (0.01)                (1.10)
+                                    124.48                  1.10
+ 
+
+ GAMMA EQUALS GAMMA IN THE FOLLOWING GROUP
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       2.34
+    ETA 2       1.80       2.41
+    ETA 3       1.67       1.63       2.62
+    ETA 4        - -        - -        - -       0.63
+    ETA 5        - -        - -        - -        - -       0.07
+    KSI 1       1.85       1.80       1.67        - -        - -       1.85
+
+         Mean Vector of Eta-Variables
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                5.28       5.25       6.42        - -        - -
+
+         PHI         
+
+               KSI 1   
+            --------
+                1.85
+              (0.19)
+                9.89
+ 
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.49       0.66       1.10       0.63       0.07
+              (0.10)     (0.10)     (0.13)     (0.10)     (0.08)
+                4.65       6.35       8.72       6.42       0.87
+ 
+
+         Squared Multiple Correlations for Structural Equations  
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.79       0.73       0.58        - -        - -
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.80       0.57       1.08       0.53       0.44       0.41
+              (0.10)     (0.09)     (0.11)     (0.09)     (0.08)     (0.13)
+                7.99       6.32       9.75       6.13       5.44       3.22
+ 
+
+         Squared Multiple Correlations for Y - Variables         
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.79       0.84       0.71       0.83       0.86       0.87
+
+ ALPHA EQUALS ALPHA IN THE FOLLOWING GROUP
+
+         KAPPA       
+
+               KSI 1   
+            --------
+                5.28
+              (0.08)
+               63.08
+ 
+
+
+                         Group Goodness of Fit Statistics
+
+                        Contribution to Chi-Square = 22.43
+                  Percentage Contribution to Chi-Square = 61.75
+ 
+                      Root Mean Square Residual (RMR) = 0.12
+                             Standardized RMR = 0.035
+                        Goodness of Fit Index (GFI) = 0.99
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+ Modification Indices and Expected Change
+
+         Modification Indices for LAMBDA-Y       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.51       0.79       0.14       7.53       3.38
+    VAR 2       0.40       0.39       0.64       7.53      12.26
+    VAR 3       0.10       0.81       0.03        - -       7.90
+    VAR 4       0.85       1.03       0.34       0.04       0.16
+    VAR 5       0.80       0.72       0.69       1.30       0.01
+    VAR 6       0.05       1.07       0.01      12.03       0.62
+
+         Expected Change for LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.02       0.02       0.01      -3.92       1.50
+    VAR 2      -0.01      -0.01      -0.01       3.92      -2.81
+    VAR 3       0.01       0.02       0.00        - -       5.13
+    VAR 4       0.00      -0.02      -0.01       0.03      -0.32
+    VAR 5       0.02       0.00       0.01       0.19       0.06
+    VAR 6       0.00      -0.02       0.00      -0.55       0.57
+
+         Standardized Expected Change for LAMBDA-Y       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.03       0.03       0.01      -3.10       0.39
+    VAR 2      -0.02      -0.02      -0.02       3.10      -0.73
+    VAR 3       0.01       0.03       0.01        - -       1.34
+    VAR 4      -0.01      -0.04      -0.02       0.02      -0.08
+    VAR 5       0.03       0.01       0.02       0.15       0.02
+    VAR 6      -0.01      -0.03       0.00      -0.44       0.15
+
+         Completely Standardized Expected Change for LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.01       0.02       0.01      -1.60       0.20
+    VAR 2      -0.01      -0.01      -0.01       1.63      -0.39
+    VAR 3       0.01       0.02       0.00        - -       0.69
+    VAR 4       0.00      -0.02      -0.01       0.01      -0.05
+    VAR 5       0.02       0.00       0.01       0.08       0.01
+    VAR 6       0.00      -0.02       0.00      -0.25       0.08
+
+         Modification Indices for GAMMA          
+
+               KSI 1   
+            --------
+    ETA 1       0.10
+    ETA 2       0.10
+    ETA 3       0.00
+    ETA 4       0.00
+    ETA 5       0.17
+
+         Expected Change for GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1      -0.01
+    ETA 2       0.00
+    ETA 3       0.00
+    ETA 4       0.00
+    ETA 5      -0.01
+
+         Standardized Expected Change for GAMMA          
+
+               KSI 1   
+            --------
+    ETA 1      -0.01
+    ETA 2       0.00
+    ETA 3       0.00
+    ETA 4       0.00
+    ETA 5      -0.04
+
+ No Non-Zero Modification Indices for PHI         
+
+         Modification Indices for PSI            
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    ETA 1        - -
+    ETA 2       1.63        - -
+    ETA 3       2.76       8.43        - -
+    ETA 4       0.01       2.04      12.03        - -
+    ETA 5       1.66      10.46       7.89       9.45        - -
+
+         Expected Change for PSI         
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    ETA 1        - -
+    ETA 2       0.33        - -
+    ETA 3       0.39      -0.66        - -
+    ETA 4      -0.01       0.14      -0.34        - -
+    ETA 5       0.07      -0.17       0.28      -0.32        - -
+
+         Standardized Expected Change for PSI            
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    ETA 1        - -
+    ETA 2       0.14        - -
+    ETA 3       0.16      -0.26        - -
+    ETA 4      -0.01       0.11      -0.27        - -
+    ETA 5       0.16      -0.41       0.67      -1.58        - -
+
+         Modification Indices for THETA-EPS      
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1        - -
+    VAR 2        - -        - -
+    VAR 3       7.53       7.53        - -
+    VAR 4        - -       0.00       2.97        - -
+    VAR 5       1.32        - -       0.03       0.62        - -
+    VAR 6       1.38      11.28        - -       0.01       0.16        - -
+
+         Expected Change for THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1        - -
+    VAR 2        - -        - -
+    VAR 3      -0.21       0.21        - -
+    VAR 4        - -       0.00       0.12        - -
+    VAR 5       0.12        - -      -0.01      -0.10        - -
+    VAR 6       0.08      -0.21        - -       0.00       0.03        - -
+
+         Completely Standardized Expected Change for THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1        - -
+    VAR 2        - -        - -
+    VAR 3      -0.06       0.06        - -
+    VAR 4        - -       0.00       0.03        - -
+    VAR 5       0.03        - -       0.00      -0.03        - -
+    VAR 6       0.02      -0.06        - -       0.00       0.01        - -
+
+         Modification Indices for TAU-Y          
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.77        - -       0.31       2.22       0.24       0.52
+
+         Expected Change for TAU-Y       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.10        - -      -0.07      -0.17       0.05       0.08
+
+         Modification Indices for ALPHA          
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.71       0.36       0.06       0.51       0.01
+
+         Expected Change for ALPHA       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+               -0.11       0.02       0.01       0.07      -0.01
+
+ No Non-Zero Modification Indices for KAPPA       
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+ Within Group Standardized Solution           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.53        - -        - -       0.79        - -
+    VAR 2        - -       1.55        - -       0.79        - -
+    VAR 3        - -        - -       1.62       0.07        - -
+    VAR 4       1.61        - -        - -        - -       0.26
+    VAR 5        - -       1.63        - -        - -       0.26
+    VAR 6        - -        - -       1.62        - -       0.31
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.89
+    ETA 2       0.85
+    ETA 3       0.76
+    ETA 4        - -
+    ETA 5        - -
+
+         Correlation Matrix of ETA and KSI       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       1.00
+    ETA 2       0.76       1.00
+    ETA 3       0.68       0.65       1.00
+    ETA 4        - -        - -        - -       1.00
+    ETA 5        - -        - -        - -        - -       1.00
+    KSI 1       0.89       0.85       0.76        - -        - -       1.00
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.21       0.27       0.42       1.00       1.00
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+ Within Group Completely Standardized Solution
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.79        - -        - -       0.41        - -
+    VAR 2        - -       0.82        - -       0.42        - -
+    VAR 3        - -        - -       0.84       0.03        - -
+    VAR 4       0.90        - -        - -        - -       0.15
+    VAR 5        - -       0.92        - -        - -       0.15
+    VAR 6        - -        - -       0.92        - -       0.18
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.89
+    ETA 2       0.85
+    ETA 3       0.76
+    ETA 4        - -
+    ETA 5        - -
+
+         Correlation Matrix of ETA and KSI       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       1.00
+    ETA 2       0.76       1.00
+    ETA 3       0.68       0.65       1.00
+    ETA 4        - -        - -        - -       1.00
+    ETA 5        - -        - -        - -        - -       1.00
+    KSI 1       0.89       0.85       0.76        - -        - -       1.00
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.21       0.27       0.42       1.00       1.00
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.21       0.16       0.29       0.17       0.14       0.13
+
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+ Number of Iterations = 70
+
+ LISREL Estimates (Maximum Likelihood)                           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.00        - -        - -       1.00        - -
+ 
+    VAR 2        - -       1.00        - -       1.00        - -
+ 
+    VAR 3        - -        - -       1.00       1.20        - -
+                                               (0.53)
+                                                 2.27
+ 
+    VAR 4       1.05        - -        - -        - -       1.00
+              (0.01)
+               95.15
+ 
+    VAR 5        - -       1.05        - -        - -       1.00
+                         (0.01)
+                         101.88
+ 
+    VAR 6        - -        - -       1.00        - -       1.21
+                                    (0.01)                (1.10)
+                                    124.48                  1.10
+ 
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       1.00
+ 
+    ETA 2       0.97
+              (0.06)
+               17.55
+ 
+    ETA 3       0.90
+              (0.06)
+               15.71
+ 
+    ETA 4        - -
+ 
+    ETA 5        - -
+ 
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       3.02
+    ETA 2       1.78       2.48
+    ETA 3       1.66       1.61       2.81
+    ETA 4        - -        - -        - -       0.37
+    ETA 5        - -        - -        - -        - -       0.11
+    KSI 1       1.83       1.78       1.66        - -        - -       1.83
+
+         Mean Vector of Eta-Variables
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                5.11       5.07       6.26        - -        - -
+
+         PHI         
+
+               KSI 1   
+            --------
+                1.83
+              (0.32)
+                5.81
+ 
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                1.19       0.74       1.32       0.37       0.11
+              (0.27)     (0.22)     (0.26)     (0.19)     (0.15)
+                4.44       3.37       4.98       1.93       0.69
+ 
+
+         Squared Multiple Correlations for Structural Equations  
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.61       0.70       0.53        - -        - -
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                1.11       0.99       0.90       0.80       0.77       0.81
+              (0.24)     (0.22)     (0.32)     (0.22)     (0.20)     (0.25)
+                4.61       4.47       2.83       3.57       3.84       3.21
+ 
+
+         Squared Multiple Correlations for Y - Variables         
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.75       0.74       0.79       0.81       0.79       0.78
+
+         ALPHA       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                 - -       0.11       1.64        - -        - -
+                         (0.29)     (0.31)
+                           0.36       5.37
+ 
+
+         KAPPA       
+
+               KSI 1   
+            --------
+                5.11
+              (0.14)
+               37.72
+ 
+
+
+                        Global Goodness of Fit Statistics
+
+                             Degrees of Freedom = 18
+               Minimum Fit Function Chi-Square = 36.32 (P = 0.0064)
+       Normal Theory Weighted Least Squares Chi-Square = 36.18 (P = 0.0067)
+                 Estimated Non-centrality Parameter (NCP) = 18.18
+             90 Percent Confidence Interval for NCP = (4.78 ; 39.34)
+ 
+                        Minimum Fit Function Value = 0.056
+                Population Discrepancy Function Value (F0) = 0.028
+             90 Percent Confidence Interval for F0 = (0.0074 ; 0.061)
+             Root Mean Square Error of Approximation (RMSEA) = 0.056
+            90 Percent Confidence Interval for RMSEA = (0.029 ; 0.082)
+               P-Value for Test of Close Fit (RMSEA < 0.05) = 0.32
+ 
+                  Expected Cross-Validation Index (ECVI) = 0.17
+             90 Percent Confidence Interval for ECVI = (0.13 ; 0.18)
+                         ECVI for Saturated Model = 0.065
+                       ECVI for Independence Model = 61.75
+ 
+     Chi-Square for Independence Model with 30 Degrees of Freedom = 39751.89
+                           Independence AIC = 39775.89
+                                Model AIC = 108.18
+                              Saturated AIC = 84.00
+                           Independence CAIC = 39841.54
+                               Model CAIC = 305.13
+                             Saturated CAIC = 313.77
+ 
+                          Normed Fit Index (NFI) = 1.00
+                        Non-Normed Fit Index (NNFI) = 1.00
+                     Parsimony Normed Fit Index (PNFI) = 0.60
+                        Comparative Fit Index (CFI) = 1.00
+                        Incremental Fit Index (IFI) = 1.00
+                         Relative Fit Index (RFI) = 1.00
+ 
+                             Critical N (CN) = 618.14
+ 
+
+
+                         Group Goodness of Fit Statistics
+
+                        Contribution to Chi-Square = 13.89
+                  Percentage Contribution to Chi-Square = 38.25
+ 
+                      Root Mean Square Residual (RMR) = 0.33
+                             Standardized RMR = 0.079
+                        Goodness of Fit Index (GFI) = 0.97
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+ Modification Indices and Expected Change
+
+         Modification Indices for LAMBDA-Y       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.51       0.70       0.47       4.33       0.00
+    VAR 2       0.34       0.39       0.48       4.33       1.45
+    VAR 3       0.03       0.02       0.03        - -       3.56
+    VAR 4       0.85       0.92       0.72       1.02       1.04
+    VAR 5       0.84       0.72       0.48       0.57       2.50
+    VAR 6       0.00       0.01       0.01       0.00       0.42
+
+         Expected Change for LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1      -0.02      -0.02      -0.01      -0.94      -0.01
+    VAR 2       0.01       0.01       0.01       0.94      -1.56
+    VAR 3       0.00       0.00       0.00        - -       3.91
+    VAR 4       0.02       0.02       0.02       0.39      -1.36
+    VAR 5      -0.02      -0.02      -0.01      -0.28       2.11
+    VAR 6       0.00       0.00       0.00      -0.01      -1.24
+
+         Standardized Expected Change for LAMBDA-Y       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1      -0.03      -0.03      -0.02      -0.57       0.00
+    VAR 2       0.02       0.02       0.02       0.57      -0.51
+    VAR 3      -0.01       0.00      -0.01        - -       1.27
+    VAR 4       0.03       0.03       0.03       0.24      -0.44
+    VAR 5      -0.03      -0.02      -0.02      -0.17       0.69
+    VAR 6       0.00       0.00       0.00      -0.01      -0.40
+
+         Completely Standardized Expected Change for LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1      -0.01      -0.01      -0.01      -0.27       0.00
+    VAR 2       0.01       0.01       0.01       0.29      -0.26
+    VAR 3       0.00       0.00       0.00        - -       0.62
+    VAR 4       0.01       0.02       0.01       0.11      -0.21
+    VAR 5      -0.02      -0.01      -0.01      -0.09       0.36
+    VAR 6       0.00       0.00       0.00       0.00      -0.21
+
+         Modification Indices for GAMMA          
+
+               KSI 1   
+            --------
+    ETA 1       0.10
+    ETA 2       0.10
+    ETA 3       0.00
+    ETA 4       0.01
+    ETA 5       0.01
+
+         Expected Change for GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.01
+    ETA 2      -0.01
+    ETA 3       0.00
+    ETA 4       0.00
+    ETA 5       0.00
+
+         Standardized Expected Change for GAMMA          
+
+               KSI 1   
+            --------
+    ETA 1       0.01
+    ETA 2      -0.01
+    ETA 3       0.00
+    ETA 4       0.00
+    ETA 5       0.01
+
+ No Non-Zero Modification Indices for PHI         
+
+         Modification Indices for PSI            
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    ETA 1        - -
+    ETA 2       1.55        - -
+    ETA 3       2.46       7.74        - -
+    ETA 4       0.47       0.76       0.00        - -
+    ETA 5       1.04       0.14       0.90       1.24        - -
+
+         Expected Change for PSI         
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    ETA 1        - -
+    ETA 2      -0.32        - -
+    ETA 3      -0.37       0.63        - -
+    ETA 4      -0.09       0.11       0.00        - -
+    ETA 5      -0.13       0.05       0.17       0.83        - -
+
+         Standardized Expected Change for PSI            
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    ETA 1        - -
+    ETA 2      -0.12        - -
+    ETA 3      -0.13       0.24        - -
+    ETA 4      -0.09       0.12       0.00        - -
+    ETA 5      -0.24       0.09       0.31       4.23        - -
+
+         Modification Indices for THETA-EPS      
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1        - -
+    VAR 2        - -        - -
+    VAR 3       4.33       4.33        - -
+    VAR 4        - -       0.05       1.41        - -
+    VAR 5       2.44        - -       0.09       0.62        - -
+    VAR 6       1.11       1.09        - -       2.50       1.04        - -
+
+         Expected Change for THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1        - -
+    VAR 2        - -        - -
+    VAR 3      -0.42       0.42        - -
+    VAR 4        - -      -0.05       0.21        - -
+    VAR 5      -0.32        - -       0.05       0.16        - -
+    VAR 6       0.18      -0.17        - -      -0.27       0.17        - -
+
+         Completely Standardized Expected Change for THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+    VAR 1        - -
+    VAR 2        - -        - -
+    VAR 3      -0.10       0.10        - -
+    VAR 4        - -      -0.01       0.05        - -
+    VAR 5      -0.08        - -       0.01       0.04        - -
+    VAR 6       0.04      -0.04        - -      -0.07       0.05        - -
+
+         Modification Indices for TAU-Y          
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.05       0.28       0.21       0.81       1.00       0.05
+
+         Expected Change for TAU-Y       
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+               -0.03       0.06      -0.06       0.11      -0.11       0.03
+
+         Modification Indices for ALPHA          
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.71       0.36       0.06       0.02       0.01
+
+         Expected Change for ALPHA       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.11      -0.05      -0.02      -0.01       0.01
+
+ No Non-Zero Modification Indices for KAPPA       
+
+ Max. Mod. Index is   12.26 for Element ( 2, 5) of LAMBDA-Y in Group  1
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+ Within Group Standardized Solution           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.74        - -        - -       0.61        - -
+    VAR 2        - -       1.57        - -       0.61        - -
+    VAR 3        - -        - -       1.68       0.73        - -
+    VAR 4       1.83        - -        - -        - -       0.32
+    VAR 5        - -       1.66        - -        - -       0.32
+    VAR 6        - -        - -       1.68        - -       0.39
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.78
+    ETA 2       0.84
+    ETA 3       0.73
+    ETA 4        - -
+    ETA 5        - -
+
+         Correlation Matrix of ETA and KSI       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       1.00
+    ETA 2       0.65       1.00
+    ETA 3       0.57       0.61       1.00
+    ETA 4        - -        - -        - -       1.00
+    ETA 5        - -        - -        - -        - -       1.00
+    KSI 1       0.78       0.84       0.73        - -        - -       1.00
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.39       0.30       0.47       1.00       1.00
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+ Within Group Completely Standardized Solution
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.82        - -        - -       0.29        - -
+    VAR 2        - -       0.80        - -       0.31        - -
+    VAR 3        - -        - -       0.81       0.35        - -
+    VAR 4       0.89        - -        - -        - -       0.16
+    VAR 5        - -       0.87        - -        - -       0.17
+    VAR 6        - -        - -       0.86        - -       0.20
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.78
+    ETA 2       0.84
+    ETA 3       0.73
+    ETA 4        - -
+    ETA 5        - -
+
+         Correlation Matrix of ETA and KSI       
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       1.00
+    ETA 2       0.65       1.00
+    ETA 3       0.57       0.61       1.00
+    ETA 4        - -        - -        - -       1.00
+    ETA 5        - -        - -        - -        - -       1.00
+    KSI 1       0.78       0.84       0.73        - -        - -       1.00
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.39       0.30       0.47       1.00       1.00
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.25       0.26       0.21       0.19       0.21       0.22
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+ Common Metric Standardized Solution           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.58        - -        - -       0.75        - -
+    VAR 2        - -       1.56        - -       0.75        - -
+    VAR 3        - -        - -       1.63       0.06        - -
+    VAR 4       1.67        - -        - -        - -       0.28
+    VAR 5        - -       1.64        - -        - -       0.28
+    VAR 6        - -        - -       1.63        - -       0.33
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.86
+    ETA 2       0.85
+    ETA 3       0.75
+    ETA 4        - -
+    ETA 5        - -
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       0.93
+    ETA 2       0.73       0.99
+    ETA 3       0.65       0.64       0.98
+    ETA 4        - -        - -        - -       1.11
+    ETA 5        - -        - -        - -        - -       0.88
+    KSI 1       0.86       0.85       0.75        - -        - -       1.00
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.19       0.27       0.41       1.11       0.88
+
+ Analysis of round 2 CHGER satis (gp1)                                          
+
+ Common Metric Completely Standardized Solution
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.80        - -        - -       0.38        - -
+    VAR 2        - -       0.81        - -       0.39        - -
+    VAR 3        - -        - -       0.83       0.03        - -
+    VAR 4       0.90        - -        - -        - -       0.15
+    VAR 5        - -       0.90        - -        - -       0.15
+    VAR 6        - -        - -       0.90        - -       0.18
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.86
+    ETA 2       0.85
+    ETA 3       0.75
+    ETA 4        - -
+    ETA 5        - -
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       0.93
+    ETA 2       0.73       0.99
+    ETA 3       0.65       0.64       0.98
+    ETA 4        - -        - -        - -       1.11
+    ETA 5        - -        - -        - -        - -       0.88
+    KSI 1       0.86       0.85       0.75        - -        - -       1.00
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.19       0.27       0.41       1.11       0.88
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.20       0.16       0.28       0.15       0.13       0.12
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+ Common Metric Standardized Solution           
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       1.58        - -        - -       0.75        - -
+    VAR 2        - -       1.56        - -       0.75        - -
+    VAR 3        - -        - -       1.63       0.90        - -
+    VAR 4       1.67        - -        - -        - -       0.28
+    VAR 5        - -       1.64        - -        - -       0.28
+    VAR 6        - -        - -       1.63        - -       0.33
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.86
+    ETA 2       0.85
+    ETA 3       0.75
+    ETA 4        - -
+    ETA 5        - -
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       1.21
+    ETA 2       0.72       1.02
+    ETA 3       0.64       0.63       1.06
+    ETA 4        - -        - -        - -       0.65
+    ETA 5        - -        - -        - -        - -       1.37
+    KSI 1       0.85       0.84       0.75        - -        - -       0.99
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.48       0.31       0.49       0.65       1.37
+
+ Analysis of round 2 CHFRE satis (gp2)                                          
+
+ Common Metric Completely Standardized Solution
+
+         LAMBDA-Y    
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+    VAR 1       0.80        - -        - -       0.38        - -
+    VAR 2        - -       0.81        - -       0.39        - -
+    VAR 3        - -        - -       0.83       0.46        - -
+    VAR 4       0.90        - -        - -        - -       0.15
+    VAR 5        - -       0.90        - -        - -       0.15
+    VAR 6        - -        - -       0.90        - -       0.18
+
+         GAMMA       
+
+               KSI 1   
+            --------
+    ETA 1       0.86
+    ETA 2       0.85
+    ETA 3       0.75
+    ETA 4        - -
+    ETA 5        - -
+
+         Covariance Matrix of ETA and KSI        
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5      KSI 1   
+            --------   --------   --------   --------   --------   --------
+    ETA 1       1.21
+    ETA 2       0.72       1.02
+    ETA 3       0.64       0.63       1.06
+    ETA 4        - -        - -        - -       0.65
+    ETA 5        - -        - -        - -        - -       1.37
+    KSI 1       0.85       0.84       0.75        - -        - -       0.99
+
+         PSI         
+         Note: This matrix is diagonal.
+
+               ETA 1      ETA 2      ETA 3      ETA 4      ETA 5   
+            --------   --------   --------   --------   --------
+                0.48       0.31       0.49       0.65       1.37
+
+         THETA-EPS   
+
+               VAR 1      VAR 2      VAR 3      VAR 4      VAR 5      VAR 6   
+            --------   --------   --------   --------   --------   --------
+                0.28       0.27       0.23       0.23       0.24       0.25
+
+                           Time used:    0.031 Seconds
+
+
