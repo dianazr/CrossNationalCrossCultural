@@ -1,0 +1,130 @@
+Analysis of round 2 CHGER trustin (gp1)
+Data ni=7 no=1878 ma=cm ng=2
+km
+*
+1						
+0.6139	1					
+0.6643	0.4993	1				
+0.6173	0.4321	0.75	1			
+0.7589	0.5114	0.6461	0.6176	1		
+0.5317	0.7944	0.4923	0.4157	0.5933	1	
+0.6289	0.4259	0.7658	0.6792	0.7099	0.497	1
+
+me
+*
+5.462646
+6.114874
+4.776298
+4.669613
+5.432773
+6.060241
+4.780142
+
+sd
+*
+1.908524
+2.084451
+1.827839
+1.830102
+1.908445
+2.030022
+1.796235
+
+label
+prlmt1 legal1 polit1 part  prlmt2 legal2 polit2 
+
+select
+1 2 3 5 6 7/
+
+model ny=6 ne=5 nk=1 ly=fu,fi te=sy,fi ps=di,fi  ga=fu,fi ph=sy,fi ty=fr ka=fr al=fi
+
+fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+fr al 2 al 3 !al 4 al 5
+
+val 1 ly 1 1 ly 2 2 ly 3 3 
+fr ly 4 1 ly 5 2 ly 6 3
+
+val 1 ly 1 4 !ly 4 5
+val 1 ly 2 4 !ly 3 4
+fr ly 3 4 ly 4 5
+val 1 ly 5 5 ly 6 5
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+
+fr ga 2 1 ga 3 1
+val 1 ga 1 1
+
+free ph 1 1 
+
+
+start .7 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+pd
+out mi sc ad=off 
+
+Analysis of round 2 CHFRE trustin (gp2)
+Data  ni=7 no=978 ma=cm 
+km
+*
+1						
+0.5636	1					
+0.6877	0.5778	1				
+0.5295	0.5346	0.7868	1			
+0.7238	0.5483	0.6752	0.5501	1		
+0.4754	0.7578	0.5373	0.4864	0.6356	1	
+0.5762	0.5103	0.8003	0.6719	0.7482	0.6322	1
+
+me
+*
+5.462025
+6.070248
+4.610766
+4.346723
+5.415584
+5.996805
+4.525806
+
+sd
+*
+2.12098
+2.174391
+2.050617
+2.107863
+2.026538
+2.159503
+2.04899
+
+
+label
+prlmt1 legal1 polit1 part  prlmt2 legal2 polit2 
+
+select
+1 2 3 5 6 7/
+
+model ny=6 ne=5 nk=1 te=sy,fi ps=di,fi ly=in ga=fu,in ph=sy,fi ty=fi ka=fr al=in
+
+fi ty 1 ty 2 ty 3 ty 4 ty 5 ty 6
+
+val 1 ly 1 1 ly 2 2 ly 3 3 
+!fr ly 4 1 ly 5 2 ly 6 3
+
+
+!val 1 ly 4 5 
+val 1 ly 2 4 
+!val 1 ly 1 4 
+val 1 ly 5 5 
+val 1 ly 6 5
+!val 1 ly 3 4
+free ly 3 4 ly 4 5 ly 1 4
+fr te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+fr ps 1 1 ps 2 2 ps 3 3
+fr ps 4 4 
+fr ps 5 5
+
+free ph 1 1 
+start .1 te 1 1 te 2 2 te 3 3 te 4 4 te 5 5 te 6 6
+pd
+out mi sc ad=off 
+
